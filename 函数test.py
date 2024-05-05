@@ -22,9 +22,11 @@ sumTest(8, 6)
 
 print("ttttttttttttt---")
 
-# 全局变量在函数中 只是局部变量
+# 全局变量在函数中 只是局部变量  除非使用global
 num = 800
-print("======num,",num)
+print("======num,", num)
+
+
 def add(x):
     x = x + 100
     print("xxxxxxxxxxxxxx=", x)
@@ -33,6 +35,17 @@ def add(x):
 def originalValue(xy):
     print(xy)
 
+
 add(num)
 originalValue(num)
 print("final num ====", num)
+
+
+def addTest():
+    global num
+    num += 100
+    print("xxxxxxxxxxxxxxaddTest=", num)
+
+
+addTest()
+print("=======number值 %d" % num)
