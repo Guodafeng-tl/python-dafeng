@@ -39,3 +39,7 @@ for i in range(1,100):
     if i == 10:
         break
     print("牛牛牛牛牛 %d" % i)
+
+print("len================")
+name_str = "dssdfsd"
+print(len(name_str))
