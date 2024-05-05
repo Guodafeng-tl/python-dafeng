@@ -49,3 +49,14 @@ def addTest():
 
 addTest()
 print("=======number值 %d" % num)
+
+
+print("=====================函数多返回值")
+def test_return():
+    return 1, 2, 3
+
+
+x, y, z = test_return()
+print("x=====", x)
+print("y=====", y)
+print("z=====", z)
